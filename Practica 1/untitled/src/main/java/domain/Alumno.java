@@ -9,6 +9,10 @@ public class Alumno {
         this.materiasAprobadas = materiasAprobadas;
     }
 
+    public List<Materia> getMateriasAprobadas() {
+        return materiasAprobadas;
+    }
+
     public boolean tieneAprobadas(List <Materia> unasMaterias){
         return materiasAprobadas.containsAll(unasMaterias);
     }

@@ -36,6 +36,7 @@ public class InscripcionTest {
 
         inscripcion.setMaterias(materiasInscripcion);
 
-        Assert.assertEquals(true, inscripcion.aprobada());
+        Assert.assertTrue(inscripcion.aprobada());
+        Assert.assertEquals(true, alumno.getMateriasAprobadas().containsAll(materia3.getCorrelativas()));
     }
 }
